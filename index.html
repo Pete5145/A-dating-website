@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Dating Website</title>
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        width: 960px;
+        margin: 0 auto;
+    }
+    form fieldset{
+        background-color: lightyellow;
+        border: 10px solid yellow;
+        margin-bottom: 10px;
+        width: 720px;
+    }
+    form label{
+        width: 180px;
+        display: inline-block;
+        text-align: right;
+        vertical-align:text-top;
+    }
+    span{
+        text-align: center;
+    }
+    span.red{
+        background-color: red;
+        color: white;
+        padding: 2px;
+    }
+    span.purple{
+        background-color: purple;
+        color: white;
+        padding: 2px;
+    }
+    .checkbox{
+        width: auto;
+    }
+    form textarea{
+        width: 360px;
+        height: 50px;
+    }
+    label:hover{
+        font-size: 40px;
+    }
+    input:hover{
+        font-size: 40px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Please Enter Your Details For Our Dating Website!</h1>
+
+    <form action="">
+        <fieldset>
+            <legend><h3>Your face</h3></legend>
+            <label for="avatar">Your image:</label>
+            <input type="file" id="avatar" name="avatar" required> <br>
+            <label for="preview">Image preview:</label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend> <h3>Your General Details</h3></legend>
+            <label for="name">Name:</label>
+            <input type="name" id="name" name="Name" placeholder="Your full name" required>
+            <br>
+
+            <label for="gender">Gender:</label>
+             <input type="radio" id="gender" name="Gender" value="male" required>Male
+            <input type="radio" id="gender" name="Gender" value="Female" required>Female
+            <br>
+
+            <label for="age">Age:</label>
+            <input type="number" name="number" id="age" required> <br>
+
+            <Label for="date">Date of birth:</Label>
+            <input type="date" name="date" id="date"> <br>
+
+            <label for="color">Favorite color:</label>
+            <input type="color" name="color" id="color"> <br>
+
+            <label for="country"> Which country: </label>
+            <select name="Country" id="country">
+                <option value="No selection">No selection</option>
+                <option value="Germany">Germany</option>
+                <option value="Canada">Canada</option>
+                <option value="France">France</option>
+                <option value="Italy">Italy</option>
+                <option value="Ukraine">Ukraine</option>
+            </select>
+        </fieldset>
+
+
+        <fieldset>
+            <legend> <h3>Your indicators</h3></legend>
+
+            <label for="height">Height: </label>
+            <span class="red">Short</span><input type="range" name="height" id="height" min="0" max="100"><span class="purple">Tall</span> <br>
+
+            <label for="salary">Salary:</label>
+           <span class="red">Poor</span><input type="range" name="salary" id="salary" min="0" max="100"><span class="purple">Rich</span>
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>Your Contact Information</h3></legend>
+
+            <label for="email">Email:</label>
+            <input type="email" name="Mobile" id="email" required> <br>
+
+            <label for="Mobile">Mobile:</label>
+            <input type="tel" name="Mobile" id="Mobile"> <br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" cols="30" rows="0"></textarea> <br>
+
+            <label for="method" class="checkbox">Method to contact you: </label>
+            <input type="checkbox" id="method" name="Method[]" value="Email"> Email
+            <input type="checkbox" id="method" name="Method[]" value="Whatsapp"> Whatsapp
+            <input type="checkbox" id="method" name="Method[]" value="In-app chat"> In-app chat
+
+        </fieldset> <br>
+        <input type="submit">
+    </form>
+    
+
+    <script src="Image.js"></script>
+</body>
+</html>
